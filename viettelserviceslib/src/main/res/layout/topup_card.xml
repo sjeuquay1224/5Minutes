@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/vt_dialog_margin"
+        android:fillViewport="true" >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textColor="@android:color/holo_blue_dark"
+                android:id="@android:id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vt_text_message_topup"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vt_text_pin_card"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.viettel.android.gsm.widget.VtEditText
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:id="@android:id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/vt_text_hint_pin_card"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </com.viettel.android.gsm.widget.VtEditText>
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vt_text_card_serial"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.viettel.android.gsm.widget.VtEditText
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:id="@android:id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/vt_text_hint_card_serial"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_name_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="Tên Tài Khoản:"
+            android:id="@+id/edt_acc_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_pass_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="Mật khẩu:"
+            android:id="@+id/edt_pass_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_mail_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="E-Mail:"
+            android:id="@+id/edt_mail_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_phone_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="Số Điện Thoại:"
+            android:inputType="phone"
+            android:id="@+id/edt_phone_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_cmnd_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="Số CMND"
+            android:inputType="phone"
+            android:id="@+id/edt_cmnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:id="@+id/input_layout_address_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:hint="Ðịa Chỉ Nơi Đang Sống:"
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primary" />
+        </android.support.design.widget.TextInputLayout>
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ảnh CMND:"
+                 />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ảnh Bằng Lái A1:" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imb_cmnd"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/imb_banglai"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="4"
+                    android:layout_marginLeft="30dp" />
+            </TableRow>
+        </TableLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="2dp">
+        <Button
+            android:id="@+id/btn_dangky_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:text="Đăng Ký"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:padding="2dp">
+            <Button
+                android:id="@+id/btn_cancel_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Hủy"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

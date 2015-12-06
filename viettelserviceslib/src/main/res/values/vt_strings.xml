@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="vt_dialog_title">ViettelAPI</string>
+	
+    <string name="vt_text_hint_capcha">Mã xác minh</string>
+	<string name="vt_text_message_phone_number">Bạn có đồng ý cho ứng dụng lấy số điện thoại của bạn không?</string>
+	<string name="vt_text_message_topup">Bạn hãy nhập vào số serial của thẻ và mã pin dưới lớp bạc để thực hiện thanh toán</string>    
+    <string name="vt_text_hint_card_serial">Nhập mã pin</string>
+    <string name="vt_text_hint_pin_card">Nhập Số serial</string>
+    
+    <string name="vt_text_card_serial">Mã pin (13&#8211;15):</string>
+    <string name="vt_text_pin_card">Số serial (11&#8211;15):</string>
+    
+    <!-- Cho phép sửa đổi tên button THANH TOÁN với các lựa chọn như: Đồng ý, Thanh toán, Chấp nhận, OK, YES. -->
+    <string name="vt_button_yes">Đồng ý</string>
+    <!-- Cho phép sửa đổi tên button TỪ CHỐI với các lựa chọn như: Hủy, Từ chối, Để sau, Lúc khác, Cancel, No. -->
+    <string name="vt_button_no">Hủy</string>
+
+</resources>

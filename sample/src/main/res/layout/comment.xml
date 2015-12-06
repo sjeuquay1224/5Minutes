@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    tools:context="com.directions.sample.CommentDriver">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:stepSize="1.0"
+
+        />
+
+    <TextView
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvranting"
+        android:layout_below="@+id/ratingBar2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_title"
+        android:hint="Tiêu Đề"
+        android:textColor="@color/primary"
+        android:layout_below="@+id/tvranting"
+        android:layout_alignLeft="@+id/ratingBar2"
+        android:layout_alignStart="@+id/ratingBar2"
+        android:layout_alignRight="@+id/ratingBar2"
+        android:layout_alignEnd="@+id/ratingBar2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:ems="10"
+        android:id="@+id/edit_description"
+        android:layout_gravity="center"
+        android:layout_below="@+id/edt_title"
+        android:layout_alignLeft="@+id/edt_title"
+        android:layout_alignStart="@+id/edt_title"
+        android:hint="Mô Tả"
+        android:textColor="@color/primary"
+        android:layout_alignRight="@+id/ratingBar2"
+        android:layout_alignEnd="@+id/ratingBar2"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

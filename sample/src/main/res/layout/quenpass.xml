@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+        android:id="@+id/input_layout_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:hint="Nhập tên tài khoản"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_qptk"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+        android:id="@+id/input_layout_mail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:hint="Nhập mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_qpm"
+        android:layout_below="@+id/edt_qptk"
+        android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,203 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ibm.bluelist.EditActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Tài Khoản:"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/txt_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu :"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/edt_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Điện Thoại:"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Tiền Trong Tài Khoản"
+                android:id="@+id/textView20" />
+
+            <EditText
+                android:inputType="phone"
+                android:textColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_tien" />
+
+            <TextView
+                android:id="@+id/txt_cmnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số CMND"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edt_cmnd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/txt_diachi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ðịa Chỉ Nơi Đang Sống:"
+                android:textColor="@color/primary" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lần bị tố cáo:"
+                android:id="@+id/txt_report" />
+
+            <EditText
+                android:textColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_report" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_anh1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ảnh CMND:"
+                        android:textColor="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/txt_anh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_marginLeft="30dp"
+                        android:text="Ảnh Bằng Lái A1:"
+                        android:textColor="@color/primary" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imb_cmnd1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/imb_banglai1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_column="4"
+                        android:layout_marginLeft="30dp" />
+                </TableRow>
+            </TableLayout>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:text="Đồng ý"
+                android:id="@+id/btn_accept"
+                android:textColor="@color/white"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quay Lại"
+                android:id="@+id/btn_cancel" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+        <!--<TextView
+            android:textColor="@color/primary"
+            android:id="@+id/textViewPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đến:"
+            />
+
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primary"
+            android:text="nguyenhai4001@gmail.com">
+
+            <requestFocus />
+
+        </EditText>-->
+        <EditText
+            android:textColor="@color/primary"
+            android:id="@+id/editTextSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chủ đề"></EditText>
+
+
+
+        <EditText
+            android:textColor="@color/primary"
+            android:id="@+id/editTextMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:hint="Soạn mail"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/buttonSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:text="Gửi" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

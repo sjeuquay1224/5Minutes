@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">5 Minutes</string>
+    <string name="action_settings">Cài Đặt</string>
+    <string name="action_search">Tìm Kiếm</string>
+    <string name="button_dangnhap">Đăng nhập</string>
+    <string name="button_dangky">Đăng ký</string>
+    <string name="drawer_open">Mở</string>
+    <string name="drawer_close">Đóng</string>
+    <string name="nav_item_home" translatable="false">Trang chủ</string>
+    <string name="nav_item_profile" translatable="false">Tài khoản của tôi</string>
+    <string name="nav_item_about" translatable="false">Giới thiệu về 5Minutes</string>
+    <string name="nav_item_historytrip" translatable="false">Lịch sử chuyến đi</string>
+    <string name="nav_item_historycrad" translatable="false">Lịch sử nạp thẻ</string>
+
+
+    <!--<string name="local_service_started" translatable="false">Đang chạy nền</string>-->
+
+    <string name="thongbao" translatable="false">Nhân viên 5Minutes sẽ xem xét các báo cáo và tài xế bị gắn cờ 24 giờ một ngày, bảy ngày một tuần để xác định xem báo cáo/tài xế có vi phạm Nguyên tắc hay không. Chúng tôi sẽ tạm khóa hoặc chấm dứt những tài khoản bị phạt do vi phạm Nguyên tắc và vi phạm nghiêm trọng hay vi phạm nhiều lần. </string>
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="banner_ad_unit_id">ca-app-pub-1823750731357509/2060299878</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_profile</item>
+        <item>@string/nav_item_historytrip</item>
+        <item>@string/nav_item_historycrad</item>
+        <item>@string/nav_item_about</item>
+    </string-array>
+
+    <string-array name="nav_icon">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+
+    </string-array>
+    <string name="title_home" translatable="false">Trang chủ</string>
+    <string name="title_profile" translatable="false">Tài khoản của tôi</string>
+    <string name="title_about" translatable="false">Giới thiệu về 5Minutes</string>
+    <string name="title_historytrip" translatable="false">Lịch sử chuyến đi</string>
+    <string name="title_historycrad" translatable="false">Lịch sử nạp thẻ</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <!--Bluemix-->
+    <string name="item_to_buy" translatable="false">What do you want to buy?</string>
+    <string name="title_activity_edit" translatable="false">Edit Item</string>
+    <string name="done">Xong</string>
+    <string name="action_edit">Sửa</string>
+    <string name="action_delete">Xóa</string>
+    <string name="title_text" translatable="false">GROCERY LIST</string>
+
+    <string name="custom_notification">I\'m a custom notification.</string>
+    <!-- getString(String, Object...) does not support HTML tags directly, they need to be encoded first.
+    Original string: <b>%1$s</b><br/><i>Place Id: %2$s</i><br/>Address: %3$s<br/>Phone: %4$s<br/>Website: %5$s-->
+    <string name="place_details" translatable="false">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+    <string name="coordinatar_card">Coordinator Layout</string>
+    <string name="coordinatar_card_desc">The Design library introduces CoordinatorLayout, a layout which provides an additional level of control over touch events between child views, something which many of the components in the Design library take advantage of.</string>
+    <string name="appBarLayout_card">AppBarLayout</string>
+    <string name="appBarLayout_card_desc">AppBarLayout allows your Toolbar and other views (such as tabs provided by TabLayout) to react to scroll events in a sibling view marked with a ScrollingViewBehavior. Now, as the user scrolls, the AppBarLayout can respond to those events by using the children’s scroll flags to control how they enter (scroll on screen) and exit (scroll off screen)</string>
+    <string name="collapsing_toolbar_card">Collapsing Toolbar</string>
+    <string name="collapsing_toolbar_card_desc">Adding a Toolbar directly to an AppBarLayout gives you access to the enterAlwaysCollapsed and exitUntilCollapsed scroll flags, but not the detailed control on how different elements react to collapsing. For that, you can use CollapsingToolbarLayout.</string>
+     <string name="collapsed_image">A single Android robot waving. Symbolises a collapsed notification. </string>
+
+
+</resources>

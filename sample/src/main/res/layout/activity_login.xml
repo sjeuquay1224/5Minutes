@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp">
+
+            <ImageView
+                android:id="@+id/imv_logo"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/logo5minutes"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/imv_logo2"
+                android:layout_alignStart="@+id/imv_logo2" />
+
+            <ImageView
+                android:id="@+id/imv_logo2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/banhxe1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/imv_logo3"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/minutes"
+                android:layout_alignTop="@+id/imv_logo"
+                android:layout_alignLeft="@+id/imv_logo"
+                android:layout_alignStart="@+id/imv_logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:id="@+id/input_layout_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="Tên tài khoản:"
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+
+                />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:id="@+id/input_layout_pass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:hint="Mật khẩu:"
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                 />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top"
+                android:background="@color/ColorPrimaryDark"
+                android:text="@string/button_dangnhap"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:background="@color/material_drawer_selected_text"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_dangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_dangky"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:textColor="@color/navigationBarColor"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt_quenpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Quên mật khẩu" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
