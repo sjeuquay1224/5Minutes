@@ -6,15 +6,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.os.SystemClock;
 import android.os.Vibrator;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,37 +20,23 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.inputmethod.EditorInfo;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.directions.sample.activity.Navigation;
-import com.directions.sample.adapter.ConnectionDetector;
 import com.directions.sample.model.AlertDialogManager;
 import com.directions.sample.model.SoundManager;
 import com.ibm.bluelist.BlueListApplication;
-import com.ibm.bluelist.HistoryCard;
 import com.ibm.bluelist.HistoryTrip;
 import com.ibm.bluelist.Item;
 import com.ibm.bluelist.Ranting;
-import com.ibm.mobile.services.cloudcode.IBMCloudCode;
-import com.ibm.mobile.services.core.http.IBMHttpResponse;
-import com.ibm.mobile.services.data.IBMDataException;
-import com.ibm.mobile.services.data.IBMDataObject;
-import com.ibm.mobile.services.data.IBMQuery;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import bolts.Continuation;
-import bolts.Task;
 
 /**
  * Created by RON on 9/21/2015.
@@ -179,7 +161,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Tex
         //xử lý button đăng ký
         if (v.getId() == R.id.btn_dangky) {
             mSoundManager.playSound(2);
-            Intent i = new Intent(this, ActivityDangKy.class);
+            Intent i = new Intent(this, ActivityRegister.class);
 
             startActivity(i);
         }

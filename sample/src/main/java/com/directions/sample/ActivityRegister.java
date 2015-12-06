@@ -24,7 +24,7 @@ import com.directions.sample.model.SoundManager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActivityDangKy extends AppCompatActivity{
+public class ActivityRegister extends AppCompatActivity{
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;

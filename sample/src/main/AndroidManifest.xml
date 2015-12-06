@@ -89,7 +89,7 @@
         </activity>
 
         <activity
-            android:name="com.directions.sample.ActivityDangKy"
+            android:name=".ActivityRegister"
             android:label="@string/app_name"
             >
             <intent-filter>
@@ -145,7 +145,7 @@
             android:authorities="com.directions.sample.locations"
             android:exported="false" />
         <activity android:name=".activity.RechargeCardHistory" />
-        <activity android:name=".activity.NapTheActivity" />
+        <activity android:name=".activity.ActivityRechargeCard" />
 
         <activity
             android:name="com.viettel.android.gsm.ViettelActivity"

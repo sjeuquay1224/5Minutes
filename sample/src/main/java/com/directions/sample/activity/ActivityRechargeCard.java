@@ -14,10 +14,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.directions.sample.R;
 
@@ -49,7 +47,7 @@ import bolts.Task;
 /**
  * Created by RON on 10/15/2015.
  */
-public class NapTheActivity extends AppCompatActivity implements View.OnClickListener, ViettelClient.OnConnectionCallbacks {
+public class ActivityRechargeCard extends AppCompatActivity implements View.OnClickListener, ViettelClient.OnConnectionCallbacks {
     Button nap, rut,Charging;
     private Toolbar toolbar;
     List<Item> itemList;
@@ -59,7 +57,7 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
     int sothutu;
     protected ViettelClient viettelClient;
     String PublisherID = "122245", AppID = "12608";
-    public static final String CLASS_NAME = "NapTheActivity";
+    public static final String CLASS_NAME = "ActivityRechargeCard";
     private SoundManager mSoundManager;
     AlertDialogManager alert = new AlertDialogManager();
     @Override
@@ -154,12 +152,10 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
 
                             }, Task.UI_THREAD_EXECUTOR);
                             mSoundManager.playSound(2);
-                            alert.showAlertDialog(NapTheActivity.this, "Thành Công", "Chúc mừng bạn đã nạp thẻ thành công",true);
-                            //Toast.makeText(getApplicationContext(), "Thành Công " + topupInfo.getAmount(), Toast.LENGTH_LONG).show();
+                            alert.showAlertDialog(ActivityRechargeCard.this, "Thành Công", "Chúc mừng bạn đã nạp thẻ thành công",true);
                         } else {
                             mSoundManager.playSound(3);
-                            alert.showAlertDialog(NapTheActivity.this, "Thất bại", "Giao dịch đã bị hủy", false);
-                            //Toast.makeText(NapTheActivity.this, "Thất Bại" + "\ntopupInfo: " + (topupInfo != null ? topupInfo.toString() : "") + "\nvtCode: " + vtCode, Toast.LENGTH_LONG).show();
+                            alert.showAlertDialog(ActivityRechargeCard.this, "Thất bại", "Giao dịch đã bị hủy", false);
                         }
 
                     }
@@ -170,7 +166,7 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
         if (v.getId() == R.id.btn_rut) {
             mSoundManager.playSound(1);
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                    NapTheActivity.this);
+                    ActivityRechargeCard.this);
             // set title
             alertDialogBuilder.setTitle("Thông báo!");
 
@@ -245,12 +241,10 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
 
                             }, Task.UI_THREAD_EXECUTOR);
                             mSoundManager.playSound(2);
-                            alert.showAlertDialog(NapTheActivity.this, "Thành công", "Chúc mừng bạn đã nạp thẻ thành công", true);
-                            //Toast.makeText(getApplicationContext(), "Thành Công " + topupInfo.getAmount(), Toast.LENGTH_LONG).show();
+                            alert.showAlertDialog(ActivityRechargeCard.this, "Thành công", "Chúc mừng bạn đã nạp thẻ thành công", true);
                         } else {
                             mSoundManager.playSound(3);
-                            alert.showAlertDialog(NapTheActivity.this, "Thất bại", "Giao dịch đã bị hủy", false);
-                            //Toast.makeText(NapTheActivity.this, "Thất Bại" + "\ntopupInfo: " + (topupInfo != null ? topupInfo.toString() : "") + "\nvtCode: " + vtCode, Toast.LENGTH_LONG).show();
+                            alert.showAlertDialog(ActivityRechargeCard.this, "Thất bại", "Giao dịch đã bị hủy", false);
                         }
 
                     }
@@ -274,7 +268,7 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
     public void onConnected() {
         final LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView1);
         rootView.removeAllViews();
-        TextView textView = new TextView(NapTheActivity.this);
+        TextView textView = new TextView(ActivityRechargeCard.this);
         textView.setText("Connected");
         rootView.setGravity(Gravity.TOP);
         rootView.addView(textView);
@@ -285,7 +279,7 @@ public class NapTheActivity extends AppCompatActivity implements View.OnClickLis
     public void onConnectFail(ViettelError viettelError) {
         final LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView1);
         rootView.removeAllViews();
-        TextView textView = new TextView(NapTheActivity.this);
+        TextView textView = new TextView(ActivityRechargeCard.this);
         textView.setText(viettelError.toString());
         rootView.setGravity(Gravity.TOP);
         rootView.addView(textView);

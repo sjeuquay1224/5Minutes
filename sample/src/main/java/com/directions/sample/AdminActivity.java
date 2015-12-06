@@ -1,10 +1,7 @@
 package com.directions.sample;
 
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.SearchManager;
-import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,35 +9,26 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ActionMode;
-import android.view.InflateException;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AnimationUtils;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.directions.sample.adapter.CustomListAdapter;
-import com.directions.sample.model.HistoryCardItem;
 import com.directions.sample.model.SoundManager;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
@@ -529,7 +517,7 @@ public class AdminActivity extends AppCompatActivity {
                             .setCancelable(false)
                             .setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
-                                    Intent i = new Intent(AdminActivity.this, ActivityDangKy.class);
+                                    Intent i = new Intent(AdminActivity.this, ActivityRegister.class);
                                     startActivity(i);
                                 }
                             })

@@ -29,25 +29,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.directions.sample.activity.NapTheActivity;
-import com.directions.sample.adapter.HistoryTripAdapter;
+import com.directions.sample.activity.ActivityRechargeCard;
 import com.directions.sample.adapter.RatingAdapter;
 import com.directions.sample.model.AlertDialogManager;
-import com.directions.sample.model.HistoryTripItem;
 import com.directions.sample.model.RatingItem;
 import com.directions.sample.model.RoundImage;
 import com.directions.sample.model.SoundManager;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.ibm.bluelist.BlueListApplication;
-import com.ibm.bluelist.HistoryTrip;
 import com.ibm.bluelist.Item;
 import com.ibm.bluelist.Ranting;
 import com.ibm.mobile.services.data.IBMDataException;
@@ -265,7 +257,7 @@ public class ActivityComment extends AppCompatActivity
                                                                         // if this button is clicked, close
                                                                         // current activity
                                                                         mSoundManager.playSound(1);
-                                                                        Intent i = new Intent(ActivityComment.this, NapTheActivity.class);
+                                                                        Intent i = new Intent(ActivityComment.this, ActivityRechargeCard.class);
                                                                         i.putExtra("sothutu", stt);
                                                                         startActivity(i);
                                                                         dialog.dismiss();
